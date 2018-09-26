@@ -69,9 +69,9 @@ class YelpClient: AFHTTPRequestOperationManager {
                                     completion(Business.businesses(array: dictionaries!), nil)
                                 }
                             }
-                        },
+        },
                         failure: { (operation: AFHTTPRequestOperation?, error: Error) -> Void in
                             completion(nil, error)
-                        })!
+        })!
     }
 }
